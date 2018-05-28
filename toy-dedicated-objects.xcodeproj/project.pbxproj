@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		98795C8420BB8C48005CECF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98795C8320BB8C48005CECF5 /* AppDelegate.swift */; };
 		98795C8620BB8C48005CECF5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98795C8520BB8C48005CECF5 /* MasterViewController.swift */; };
-		98795C8820BB8C49005CECF5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98795C8720BB8C49005CECF5 /* DetailViewController.swift */; };
 		98795C8B20BB8C49005CECF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98795C8920BB8C49005CECF5 /* Main.storyboard */; };
 		98795C8D20BB8C4A005CECF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98795C8C20BB8C4A005CECF5 /* Assets.xcassets */; };
 		98795C9020BB8C4A005CECF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98795C8E20BB8C4A005CECF5 /* LaunchScreen.storyboard */; };
 		98795C9B20BB8C4A005CECF5 /* toy_dedicated_objectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98795C9A20BB8C4A005CECF5 /* toy_dedicated_objectsTests.swift */; };
+		98795CA620BB8C78005CECF5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98795CA520BB8C78005CECF5 /* Product.swift */; };
+		98795CA820BB8CC4005CECF5 /* MasterListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98795CA720BB8CC4005CECF5 /* MasterListDataSource.swift */; };
+		98795CAA20BB8F23005CECF5 /* MasterSectionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98795CA920BB8F23005CECF5 /* MasterSectionsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,6 @@
 		98795C8020BB8C48005CECF5 /* toy-dedicated-objects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "toy-dedicated-objects.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98795C8320BB8C48005CECF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98795C8520BB8C48005CECF5 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		98795C8720BB8C49005CECF5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		98795C8A20BB8C49005CECF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98795C8C20BB8C4A005CECF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98795C8F20BB8C4A005CECF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		98795C9620BB8C4A005CECF5 /* toy-dedicated-objectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "toy-dedicated-objectsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98795C9A20BB8C4A005CECF5 /* toy_dedicated_objectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toy_dedicated_objectsTests.swift; sourceTree = "<group>"; };
 		98795C9C20BB8C4A005CECF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98795CA520BB8C78005CECF5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		98795CA720BB8CC4005CECF5 /* MasterListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListDataSource.swift; sourceTree = "<group>"; };
+		98795CA920BB8F23005CECF5 /* MasterSectionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSectionsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,13 @@
 			children = (
 				98795C8320BB8C48005CECF5 /* AppDelegate.swift */,
 				98795C8520BB8C48005CECF5 /* MasterViewController.swift */,
-				98795C8720BB8C49005CECF5 /* DetailViewController.swift */,
+				98795CA720BB8CC4005CECF5 /* MasterListDataSource.swift */,
+				98795CA920BB8F23005CECF5 /* MasterSectionsDataSource.swift */,
 				98795C8920BB8C49005CECF5 /* Main.storyboard */,
 				98795C8C20BB8C4A005CECF5 /* Assets.xcassets */,
 				98795C8E20BB8C4A005CECF5 /* LaunchScreen.storyboard */,
 				98795C9120BB8C4A005CECF5 /* Info.plist */,
+				98795CA520BB8C78005CECF5 /* Product.swift */,
 			);
 			path = "toy-dedicated-objects";
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98795C8820BB8C49005CECF5 /* DetailViewController.swift in Sources */,
+				98795CAA20BB8F23005CECF5 /* MasterSectionsDataSource.swift in Sources */,
+				98795CA620BB8C78005CECF5 /* Product.swift in Sources */,
 				98795C8620BB8C48005CECF5 /* MasterViewController.swift in Sources */,
+				98795CA820BB8CC4005CECF5 /* MasterListDataSource.swift in Sources */,
 				98795C8420BB8C48005CECF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
